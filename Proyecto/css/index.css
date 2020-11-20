@@ -1,0 +1,116 @@
+.section-top {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrusel-flecha {
+  color: red;
+  font-size: 2.5rem;
+}
+
+.section-top button {
+  margin-top: 45px;
+  width: 230px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid var(--oliva);
+  border-radius: 30px;
+  text-align: center;
+  font-family: var(--fuente-lora), serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--oliva);
+}
+
+.section-top button:hover {
+  background-color: var(--oliva);
+  color: white;
+  border-color: var(--oliva);
+}
+
+.section-bottom {
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.18rem;
+  height: 640px;
+  width: 100%;
+}
+
+.section-bottom-fondo {
+  background-image: url(../img/fondo_ofertas_dia_transparente.png);
+  background-repeat: repeat;
+  opacity: 0.1;
+  height: 100%;
+}
+
+.section-bottom-titulo {
+  position: absolute;
+  margin-top: 4.25rem;
+  width: 100%;
+}
+
+.section-bottom-titulo h3 {
+  width: 100%;
+  color: var(--negro);
+  font-family: var(--fuente-lora);
+  font-style: italic;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.section-bottom-ofertas {
+  position: absolute;
+  top: 171px;
+  max-width: 1440px;
+  align-self: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.card-ofertas {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+
+.card-ofertas-img {
+  width: 230px;
+  height: 180px;
+}
+
+.card-ofertas-information {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  justify-content: space-between;
+}
+
+.card-ofertas-information-top {
+  flex: 2.5;
+}
+
+.card-ofertas-information-bottom {
+  flex: 1;
+  font-size: 1rem;
+}
+
+/* MEDIA */
+@media (max-width: 1431px) {
+  .section-bottom {
+    height: 850px;
+  }
+}
+
+@media (max-width: 954px) {
+  .section-bottom {
+    height: 1480px;
+  }
+}

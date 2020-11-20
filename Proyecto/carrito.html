@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- BOOTSTRAP SLIDER -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+        integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+        crossorigin="anonymous" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Carrito</title>
+</head>
+
+<body>
+    <header class="header-2">
+        <nav class="navbar navbar-expand-sm p-0 contenedor__navbar">
+            <a class="navbar-brand p-0" href="#">
+                <img src="./img/logo_transparente.png" alt="" loading="lazy" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse contenedor__navbar-colapsado" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+                    <li class="nav-item item-busqueda">
+                        <div class="">
+                            <form class="form-inline my-2 my-lg-0 mr-3">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Busqueda" />
+                                <button class="btn my-2 my-sm-0" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item item-carrito">
+                        <div>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart mr-3"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="text-center">CARRITO</h2>
+    </header>
+
+    <main class="carrito">
+        <section class="info">
+
+            <table class="table table-striped text-center info-tabla">
+                <thead class="info-tabla-cabecera">
+                    <tr>
+                        <th></th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="info-tabla-cuerpo">
+                    <tr>
+                        <td>
+                            <img class="info-tabla-cuerpo-img" src="https://via.placeholder.com/400x400" alt="">
+                        </td>
+                        <td><strong>Nombre del producto</strong></td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <div class="cantidad">
+                                <button class="boton-cantidad-left">-</button>
+                                <span>0</span>
+                                <button class="boton-cantidad-right">+</button>
+                            </div>
+                        </td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <button class="boton-eliminar">x</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="info-tabla-cuerpo-img" src="https://via.placeholder.com/400x400" alt="">
+                        </td>
+                        <td><strong>Nombre del producto</strong></td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <div class="cantidad">
+                                <button class="boton-cantidad-left">-</button>
+                                <span>0</span>
+                                <button class="boton-cantidad-right">+</button>
+                            </div>
+                        </td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <button class="boton-eliminar">x</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="info-tabla-cuerpo-img" src="https://via.placeholder.com/400x400" alt="">
+                        </td>
+                        <td><strong>Nombre del producto</strong></td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <div class="cantidad">
+                                <button class="boton-cantidad-left">-</button>
+                                <span>0</span>
+                                <button class="boton-cantidad-right">+</button>
+                            </div>
+                        </td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <button class="boton-eliminar">x</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="info-tabla-cuerpo-img" src="https://via.placeholder.com/400x400" alt="">
+                        </td>
+                        <td><strong>Nombre del producto</strong></td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <div class="cantidad">
+                                <button class="boton-cantidad-left">-</button>
+                                <span class="text-center">0</span>
+                                <button class="boton-cantidad-right">+</button>
+                            </div>
+                        </td>
+                        <td>S/ 25.00</td>
+                        <td>
+                            <button class="boton-eliminar">x</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="procesar-pedido">
+                <form>
+                    <div class="procesar-pedido-total">
+                        <span class="pedido-total-label">TOTAL</span>
+                        <span class="pedido-total-label">S/.</span>
+                        <span class="pedido-total-monto">1234.56</span>
+                    </div>
+                    <div>
+                        <button class="procesar-pedido-boton">PROCESAR PEDIDO</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="pago">
+            <form action="">
+                <div class="contenido_pago">
+                    <div class="titulo_pago">
+                        <h5>MI PEDIDO</h5>
+                    </div>
+                    <div class="total_pago">
+                        <div class="totales">
+                            <p>Total</p>
+                        </div>
+                        <div class="detalle">
+                            <p>S/.</p>
+                            <p>1234.56</p>
+                        </div>
+                    </div>
+                    <div class="subtitulo_pago">
+                        <h5>MÉTODO DE PAGO</h5>
+                    </div>
+                </div>
+                <div class="finalizar-pedido">
+                    <button class="finalizar-pedido-boton">FINALIZAR PEDIDO</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer class="">
+        <div class="footer-top col-12">
+            <div class="row">
+                <div class="col-md-4 footer-top-section-1">
+                    <figure class="footer-img-container">
+                        <img class="footer-img" src="./img/logo_transparente.png" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-5 footer-top-section-2">
+                    <div>
+                        <p>Av. Siempre Viva #123</p>
+                        <p>San Miguel</p>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-top-section-3">
+                    <i class="fab fa-facebook"><span>dulcesmigajas</span></i>
+                    <i class="fab fa-twitter"><span>dulcesmigajas</span></i>
+                    <i class="fab fa-instagram"><span>dulcesmigajas</span></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom col-12">
+            <p>© Copyright xxx - 2020</p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+header {
+  padding-bottom: 1rem;
+}
+
+.contenedor__navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.contenedor__navbar img {
+  width: 160px;
+  height: 128px;
+}
+
+.contenedor__navbar button span i {
+  font-size: 28px;
+  color: var(--marron-1);
+}
+
+.contenedor__navbar-colapsado {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor__navbar-colapsado ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.item-enlace {
+  flex: 3;
+}
+
+.item-enlace a {
+  font-family: var(--fuente-axis), serif;
+  color: var(--marron-1);
+  transition: all 0.5s ease;
+}
+
+.item-enlace a:hover {
+  font-family: var(--fuente-axis);
+  color: var(--salmon);
+  text-decoration-line: underline;
+  transform: scale(1.05, 1.05);
+}
+
+.item-busqueda {
+  flex: 2;
+}
+
+.item-busqueda form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item-busqueda form input {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid var(--marron-1);
+  background-color: transparent;
+}
+
+.item-busqueda form button {
+  color: var(--marron-1);
+}
+
+.item-carrito {
+  flex: 0.2;
+}
+
+.item-carrito div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-carrito div a {
+  color: var(--marron-1);
+}

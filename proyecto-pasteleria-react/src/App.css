@@ -1,0 +1,34 @@
+@import url(./assets/fonts/fonts.css);
+
+:root {
+  /* COLORES */
+  --amarillo: #fff5e4;
+  --naranja: #F6A000;
+  --salmon: #cb883e;
+  --marron-1: #79421b;
+  --marron-2: #8c593b;
+  --marron-3: #bf9780;
+  --oliva: #998c4b;
+  --teal: #1a7078;
+  --turquesa: #04b4c4;
+  --celeste: #b8f9ff;
+  --negro: #343a40;
+  --blanco: #fff;
+  --humo: #eee;
+  --desactivado: #ec101060;
+
+  /* FUENTES */
+  --fuente-axis: "axisextra_bold";
+  --fuente-lora: "Lora";
+  --fuente-roboto: "Roboto";
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: var(--amarillo);
+}

@@ -1,0 +1,15 @@
+.registro {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-registro,
+.custom-select {
+  background-color: #fff5e4;
+}
+.registro__label {
+  color: #79421b;
+  font-weight: 600;
+}

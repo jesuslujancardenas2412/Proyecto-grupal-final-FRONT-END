@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- BOOTSTRAP SLIDER -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+        integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+        crossorigin="anonymous" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        .form-control, .custom-select{
+            background-color: #fff5e4;
+        }
+        label{
+            color: #79421b;
+            font-weight: 600;
+        }
+    </style>
+    
+    <title>Ingreso</title>
+</head>
+<body>
+    <header class="header-2">
+        <nav class="navbar navbar-expand-sm p-0 contenedor__navbar">
+            <a class="navbar-brand p-0" href="#">
+                <img src="./img/logo_transparente.png" alt="" loading="lazy" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse contenedor__navbar-colapsado" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item item-enlace">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+                    <li class="nav-item item-busqueda">
+                        <div class="">
+                            <form class="form-inline my-2 my-lg-0 mr-3">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Busqueda" />
+                                <button class="btn my-2 my-sm-0" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item item-carrito">
+                        <div>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart mr-3"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="text-center">INICIAR SESIÓN</h2>
+    </header>
+    
+    <main class="container-fluid">
+        <section class="row justify-content-center">
+            <div class="col-md-8 bg-white border">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3 mt-3">
+                            <label for="inputEmail">Correo</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese correo"
+                                required>
+                            <div class="invalid-tooltip">
+                                Por favor, ingresar datos correctos.
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3 mt-3">
+                            <label for="inputPasswd">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPasswd"
+                                placeholder="Ingrese contraseña" required>
+                            <div class="invalid-tooltip">
+                                Por favor, ingresar datos correctos.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-success mb-3" type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+</html>

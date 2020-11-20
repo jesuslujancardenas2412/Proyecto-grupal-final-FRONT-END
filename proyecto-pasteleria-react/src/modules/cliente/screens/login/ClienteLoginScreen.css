@@ -1,0 +1,15 @@
+.login {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-login,
+.custom-select {
+  background-color: #fff5e4;
+}
+label {
+  color: #79421b;
+  font-weight: 600;
+}
